@@ -4,9 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "custom-green": "#009687",
+        "custom-white": "#ffffff",
         w: "#fff",
-        main: "#786",
+        y: "#FE9800",
       },
+      backgroundImage: (theme) => ({
+        "custom-gradient": "linear-gradient(to bottom, #009687, #ffffff)",
+      }),
       fontFamily: {
         // sans: ["Inter", "sans-serif"],
       },

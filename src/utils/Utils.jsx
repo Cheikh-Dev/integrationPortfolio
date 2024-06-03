@@ -18,3 +18,5 @@ export const navLinks = [
   { name: "COMPÉTENCES", href: "#competences" },
   { name: "EXPÉRIENCES", href: "#experiences" },
 ];
+
+// Section 1
