@@ -1,14 +1,22 @@
-import { useState } from 'react'
+import React from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Navbar from './components/Navbar';
+// import Section1 from './components/Section1'
+
+import background from "./assets/background.png";
+
+export default function App() {
 
   return (
     <>
-      
+        <div
+          className="relative bg-cover bg-center"
+          style={{ backgroundImage: `url(${background})` }}
+        >
+          <Navbar />
+          {/* <Section1/> */}
+        </div>
     </>
-  )
+  );
 }
-
-export default App
