@@ -4,9 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "custom-green": "#009687",
-        "custom-white": "#ffffff",
-        w: "#fff",
+        g: "#009687",
+        w: "#ffffff",
         y: "#FE9800",
       },
       backgroundImage: (theme) => ({

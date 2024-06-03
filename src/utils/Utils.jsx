@@ -20,3 +20,11 @@ export const navLinks = [
 ];
 
 // Section 1
+export const Items = ({icon: MyIcon, children }) => {
+  return (
+    <div className="flex items-center justify-center">
+      <MyIcon className="text-y mx-2 size-5" />
+      <span className="">{children}</span>
+    </div>
+  );
+}
