@@ -81,7 +81,7 @@ export const getProjects = (images) => [
   },
 ];
 export const ProjectCard = ({ project }) => (
-  <div className="mx-auto text-center max-w-sm rounded bg-w px-14 py-5 hover:shadow-md hover:shadow-y group">
+  <div className="mx-auto text-center max-w-sm rounded bg-w px-14 py-5 shadow hover:shadow-md hover:shadow-y group">
     <img className="w-full h-[190px]" src={project.image} alt={project.title} />
     <div className="px-2 py-4">
       <div className="font-semibold text-xl mb-1 text-g group-hover:text-y">
@@ -103,4 +103,33 @@ export const ProjectCard = ({ project }) => (
   </div>
 );
 
-// // Section 4
+// Section 4
+export const Tabs = ({h3, p1, p2}) => (
+  <div className="bg-white shadow p-6 mb-6 rounded-lg">
+    <h3 className="text-xl font-semibold">
+      {h3}
+    </h3>
+    <p className="text-y font-semibold">{p1}</p>
+    <p className="mt-4">
+      {p2}
+    </p>
+  </div>
+)
+
+export const experiences = [
+  {
+    h3: "Développeur Front-End en alternance ( RNCP niv 6 ),",
+    p1: "Janvier 2021",
+    p2: "Pédagogie basée sur la réalisation de projets concrets avec l’accompagnement d’un expert métier chaque semaine. L'alternance peut débuter à tout moment dans l'année avec 4 jours en entreprise et un jour de formation modulables dans la semaine.",
+  },
+  {
+    h3: "CS50, Harvard",
+    p1: "Août-octobre 2020",
+    p2: "Formation en ligne exclusivement dispensée en anglais. Les sujets comprennent l'abstraction, les algorithmes, les structures de données, l'encapsulation, la gestion des ressources, la sécurité, l'ingénierie logicielle et le développement Web. L'ensemble des problèmes est inspiré des domaines du monde réel de la biologie, de la cryptographie, de la finance et des jeux.",
+  },
+  {
+    h3: "Développeur junior, M2I formation",
+    p1: "Mars-Juillet 202",
+    p2: "Formation à raison de 35h/s à distance. Ce cursus comprend HTML, CSS, Bootstrap, Algorithmie, Javascript, React JS, Redux, LESS/SAAS, Git, Github enseigné par un expert toujours en activité. Cette formation m'a permis de valider ces enseignements par la pratique de plus d'une douzaine de projets.",
+  },
+];
