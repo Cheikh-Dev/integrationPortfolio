@@ -31,7 +31,7 @@ export default function Section2() {
               </div>
             ))}
           </div>
-          <div className="right w-full sm:w-1/2">
+          <div className="right w-full sm:w-1/2 my-10 sm:my-0">
             <h1 className="text-2xl font-bold text-g">Triforce !</h1>
             <p className="mb-10 font-semibold text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
